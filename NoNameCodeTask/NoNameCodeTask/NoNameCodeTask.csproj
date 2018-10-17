@@ -151,8 +151,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\da.cs" />
-    <Compile Include="Models\Test.cs" />
+    <Compile Include="Models\CodeTaskDbContext.cs" />
+    <Compile Include="Models\CommentSlider.cs" />
+    <Compile Include="Models\HomeImageSlider.cs" />
+    <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\Navbar.cs" />
+    <Compile Include="Models\NavbarDropdown.cs" />
+    <Compile Include="Models\NewsContent.cs" />
+    <Compile Include="Models\PartnersAcademy.cs" />
+    <Compile Include="Models\Services.cs" />
+    <Compile Include="Models\SubjectPrograms.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
