@@ -1,0 +1,146 @@
+﻿@model IEnumerable<NoNameCodeTask.Models.Menu>
+
+@{
+	Layout = null;
+}
+<nav>
+	<div class="wrapper flexbox middle">
+		<button class="hamburger hamburger--collapse " type="button">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>
+		<div class="brand-logo">
+			<a href="index.html"><img src="~/Content/Images/logo.png" alt="Code Academy"></a>
+		</div>
+		<div class="menu">
+			<div class="search-form mobile flexbox">
+				<form id="form-search-mobile" action="https://code.edu.az/search" method="GET" autocomplete="off">
+					<input type="text" name="key" placeholder="Saytda axtar">
+					<input type="hidden" name="filter" value="all" />
+					<button type="submit">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</button>
+				</form>
+				<button class="hamburger close hamburger--collapse is-active" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</div>
+			<ul>
+				@{
+					foreach (var item in Model)
+					{
+
+						<li class='dropdown'>
+							
+							<a class="dropdown-trigger">
+								@(item.Name)
+								<i class="fa fa-caret-down pull-right" aria-hidden="true"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<div class="dropdown-frame wo-title">
+									<ul>
+										<li><a href="academy/haqqimizda.html">Haqqımızda</a></li>
+										<li><a href="academy/muellimlerimiz.html">M&#252;əllimlərimiz</a></li>
+										<li><a href="academy/akademik-partnyorlar.html">Akademik Partnyorlar</a></li>
+									</ul>
+								</div>
+							</ul>
+						</li>
+
+
+					}
+				}
+				<li class='dropdown'>
+					<a class="dropdown-trigger">
+						Təhsil
+						<i class="fa fa-caret-down pull-right" aria-hidden="true"></i>
+					</a>
+					<ul class="dropdown-menu">
+						<div class="dropdown-frame">
+							<div class="heading dropdown-trigger">
+								<a>
+									DƏRSLƏR
+									<i class="fa fa-caret-down pull-right" aria-hidden="true"></i>
+								</a>
+							</div>
+							<ul>
+								<li><a href="education/qrafik-ve-veb-dizayn.html">Qrafik və Veb Dizayn</a></li>
+								<li><a href="education/digital-marketing.html">Digital Marketing</a></li>
+								<li><a href="education/proqramlasdirma.html">Proqramlaşdırma</a></li>
+								<li><a href="education/sistem-administratorlugu.html">Sistem  Administratorluğu</a></li>
+								<li><a href="education/ms-office.html">MS Office</a></li>
+								<li><a href="education/3d-modellesdirme-ve-vizualizasiya.html">3D Modelləşdirmə və Vizualizasiya</a></li>
+							</ul>
+						</div>
+
+						<div class="dropdown-frame">
+							<div class="heading dropdown-trigger">
+								TƏHSİL MODELİ
+								<i class="fa fa-caret-down pull-right" aria-hidden="true"></i>
+							</div>
+							<ul>
+								<li><a href="education/zemanetli_tehsil.html">Zəmanətli təhsil</a></li>
+								<li><a href="education/tehsil-modeli.html">Təhsil Modeli</a></li>
+								<li><a href="education/mentor_sistemi.html">Mentor sistemi</a></li>
+								<li><a href="education/beynalxalq_sertifkasiya.html">Beynəlxalq sertifikasiya</a></li>
+								<li><a href="education/karyera-merkezi.html">Karyera mərkəzi</a></li>
+							</ul>
+						</div>
+					</ul>
+				</li>
+				<li><a href="mezunlar.html">Məzunlar</a></li>
+				<li><a href="news.html">Yeniliklər</a></li>
+				<li><a href="contact.html">Əlaqə</a></li>
+				<li class='dropdown mobile-active'>
+					<a class="dropdown-trigger">
+						Təqvim
+						<i class="fa fa-caret-down pull-right" aria-hidden="true"></i>
+					</a>
+					<ul class="dropdown-menu">
+						<div class="dropdown-frame wo-title">
+							<ul>
+								<li><a href="events.html">Bütün tədbirlər</a></li>
+								<li><a href="events/infosessiyalar.html">İnfosessiyalar</a></li>
+								<li><a href="events/gizlilik_siyaseti.html">Gizlilik Siyasəti</a></li>
+							</ul>
+						</div>
+					</ul>
+				</li>
+				<li class='dropdown mobile-active'>
+					<a class="dropdown-trigger">
+						Müraciət et
+						<i class="fa fa-caret-down pull-right" aria-hidden="true"></i>
+					</a>
+					<ul class="dropdown-menu">
+						<div class="dropdown-frame wo-title">
+							<ul>
+								<li><a href="appeal/muraciet.html">M&#252;raciət</a></li>
+								<li><a href="appeal/sualim_var.html">Sualım var</a></li>
+								<li><a href="appeal/mene_zeng_edin.html">Mənə zəng edin</a></li>
+							</ul>
+						</div>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="search-bar align-right">
+			<form id="form-search" action="https://code.edu.az/search" method="GET" autocomplete="off">
+				<div class="input-wrapper">
+					<input type="text" name="key" placeholder="Saytda axtar">
+					<input type="hidden" name="filter" value="all" />
+					<button type="submit" disabled>
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</button>
+				</div>
+			</form>
+		</div>
+		<div class="apply ">
+			<button type="button" class="button-style button-blue"><a href="/LogIn/LogInFind">Log In</a></button>
+		</div>
+	</div>
+</nav>
+
