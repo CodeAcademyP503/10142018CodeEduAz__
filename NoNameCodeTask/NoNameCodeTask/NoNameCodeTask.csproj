@@ -148,10 +148,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
-    <Compile Include="Controllers\ANavbarController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LogInController.cs" />
+    <Compile Include="Controllers\MenuItemsController.cs" />
+    <Compile Include="Controllers\MenusController.cs" />
     <Compile Include="Controllers\NavbarController.cs" />
+    <Compile Include="Controllers\NewsContentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -506,14 +508,27 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
-    <Content Include="Views\ANavbar\Create.cshtml" />
-    <Content Include="Views\ANavbar\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\LogInFind.cshtml" />
     <Content Include="Views\Navbar\GetData.cshtml" />
     <Content Include="Views\Home\Wrapper.cshtml" />
     <Content Include="Views\Home\HomeSlider.cshtml" />
     <Content Include="Views\Home\EventList.cshtml" />
+    <Content Include="Views\Menus\Create.cshtml" />
+    <Content Include="Views\Menus\Delete.cshtml" />
+    <Content Include="Views\Menus\Details.cshtml" />
+    <Content Include="Views\Menus\Edit.cshtml" />
+    <Content Include="Views\Menus\Index.cshtml" />
+    <Content Include="Views\MenuItems\Create.cshtml" />
+    <Content Include="Views\MenuItems\Delete.cshtml" />
+    <Content Include="Views\MenuItems\Details.cshtml" />
+    <Content Include="Views\MenuItems\Edit.cshtml" />
+    <Content Include="Views\MenuItems\Index.cshtml" />
+    <Content Include="Views\NewsContents\Create.cshtml" />
+    <Content Include="Views\NewsContents\Delete.cshtml" />
+    <Content Include="Views\NewsContents\Details.cshtml" />
+    <Content Include="Views\NewsContents\Edit.cshtml" />
+    <Content Include="Views\NewsContents\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
