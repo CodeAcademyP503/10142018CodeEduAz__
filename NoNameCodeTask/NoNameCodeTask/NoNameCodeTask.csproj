@@ -148,12 +148,17 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\CommentSlidersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HomeImageSlidersController.cs" />
     <Compile Include="Controllers\LogInController.cs" />
     <Compile Include="Controllers\MenuItemsController.cs" />
     <Compile Include="Controllers\MenusController.cs" />
     <Compile Include="Controllers\NavbarController.cs" />
     <Compile Include="Controllers\NewsContentsController.cs" />
+    <Compile Include="Controllers\PartnersController.cs" />
+    <Compile Include="Controllers\ProgramsController.cs" />
+    <Compile Include="Controllers\UserLoginsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -529,6 +534,31 @@
     <Content Include="Views\NewsContents\Details.cshtml" />
     <Content Include="Views\NewsContents\Edit.cshtml" />
     <Content Include="Views\NewsContents\Index.cshtml" />
+    <Content Include="Views\HomeImageSliders\Create.cshtml" />
+    <Content Include="Views\HomeImageSliders\Delete.cshtml" />
+    <Content Include="Views\HomeImageSliders\Details.cshtml" />
+    <Content Include="Views\HomeImageSliders\Edit.cshtml" />
+    <Content Include="Views\HomeImageSliders\Index.cshtml" />
+    <Content Include="Views\Partners\Create.cshtml" />
+    <Content Include="Views\Partners\Delete.cshtml" />
+    <Content Include="Views\Partners\Details.cshtml" />
+    <Content Include="Views\Partners\Edit.cshtml" />
+    <Content Include="Views\Partners\Index.cshtml" />
+    <Content Include="Views\CommentSliders\Create.cshtml" />
+    <Content Include="Views\CommentSliders\Delete.cshtml" />
+    <Content Include="Views\CommentSliders\Details.cshtml" />
+    <Content Include="Views\CommentSliders\Edit.cshtml" />
+    <Content Include="Views\CommentSliders\Index.cshtml" />
+    <Content Include="Views\Programs\Create.cshtml" />
+    <Content Include="Views\Programs\Delete.cshtml" />
+    <Content Include="Views\Programs\Details.cshtml" />
+    <Content Include="Views\Programs\Edit.cshtml" />
+    <Content Include="Views\Programs\Index.cshtml" />
+    <Content Include="Views\UserLogins\Create.cshtml" />
+    <Content Include="Views\UserLogins\Delete.cshtml" />
+    <Content Include="Views\UserLogins\Details.cshtml" />
+    <Content Include="Views\UserLogins\Edit.cshtml" />
+    <Content Include="Views\UserLogins\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
