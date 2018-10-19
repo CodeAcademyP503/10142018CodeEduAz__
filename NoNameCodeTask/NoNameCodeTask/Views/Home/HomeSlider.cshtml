@@ -1,0 +1,29 @@
+﻿@model IEnumerable<NoNameCodeTask.Models.HomeImageSlider>
+
+@{
+    Layout = null;
+}
+
+<div class="news-content">
+    <div class="news-list">
+
+        @foreach (var item in Model)
+        {
+            <div class="news">
+                <div class="img">
+                    <img src="@item.Path"
+                         alt="Code Academy 3 illiyini qeyd etdi" />
+                </div>
+                <div class="desc flexbox middle">
+                    <div class="content">
+                        <a href="news/code-academy-3-illiyini-qeyd-etdi.html">
+                            <p>
+                                @item.Text
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

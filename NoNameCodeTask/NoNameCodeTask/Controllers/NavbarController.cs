@@ -21,7 +21,8 @@ namespace NoNameCodeTask.Controllers
 		//[HttpGet]
 		public ActionResult GetData()
 		{
-			//ViewBag.Menu = _testDbContext.Navbars.ToList();
+            //ViewBag.Menu = _testDbContext.Navbars.ToList();
+            List<MenuItem> menuItems = _testDbContext.Dropdowns.ToList();
 			List<Menu> Menus = _testDbContext.Menus.ToList();
 			return PartialView("GetData",Menus);
 		}

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<NoNameCodeTask.Models.NewsContent>
+
+@{
+    Layout = null;
+}
+<div class="events-list">
+    <div class="mobile-events-handler">
+        <div class="wrapper">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <span>Təqvim və yeniliklər</span>
+            <i class="fa arrow fa-caret-down" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div class="news-holder">
+        <div class="all-news">
+
+            @foreach (var item in Model)
+            {
+                <div class="news">
+                    <a href="news/code-academy-3-illiyini-qeyd-etdi.html">
+                        @if (DateTime.Now > item.TextDate)
+                        {
+                            <h1>TƏQVİM - @item.TextDate.ToString("dd MMMM")</h1>
+
+                        }
+                        else
+                        {
+                            <h1>YENİLİKLƏR - @item.TextDate.ToString("dd MMMM")</h1>
+                        }
+
+                        <p>@item.Text</p>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -511,6 +511,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\LogInFind.cshtml" />
     <Content Include="Views\Navbar\GetData.cshtml" />
+    <Content Include="Views\Home\Wrapper.cshtml" />
+    <Content Include="Views\Home\HomeSlider.cshtml" />
+    <Content Include="Views\Home\EventList.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
