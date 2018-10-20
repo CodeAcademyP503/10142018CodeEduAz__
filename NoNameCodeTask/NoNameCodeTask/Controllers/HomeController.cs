@@ -23,6 +23,7 @@ namespace WebApplicationtest.Controllers
             return View();
         }
 
+        //=======================Wrapper Start============================================= 
         public ActionResult Wrapper()
         {
             List<HomeImageSlider> homeImageSliders = codeDb.HomeImageSliders.ToList();
@@ -41,28 +42,35 @@ namespace WebApplicationtest.Controllers
 
             return PartialView(newsContents);
         }
-        //public ActionResult Part()
-        //{
-        //	List<Navbar> model = new List<Navbar>()
-        //	{
-        //		new Navbar
-        //		{
-        //			Name="Index",
-        //			Path="dsadsa"
-        //		},
-        //		new Navbar
-        //		{
-        //			Name="Mezunlar",
-        //			Path="/Navbar/Mezunlar"
-        //		},
-        //		new Navbar
-        //		{
-        //			Name="Shamil",
-        //			Path="dsadad"
-        //		}
-        //	};
-        //	return PartialView("Test",model);
-        //}
+        //=======================Wrapper End============================================= 
+       
+
+        //=======================commentSlide Start============================================= 
+        public ActionResult CommentSliders()
+        {
+            List<CommentSlider> commentSliders = codeDb.CommentSliders.ToList();
+
+            return PartialView(commentSliders); 
+        }
+        //=======================CommentSlide End============================================= 
+
+        //=======================partnerSlide Start============================================= 
+        public ActionResult PartnersAcademy()
+        {
+            List<PartnersAcademy> partnersAcademies = codeDb.PartnersAcademies.ToList();
+
+            return PartialView(partnersAcademies);
+        }
+
+        //=======================partnerSlide End============================================= 
+
+        public ActionResult Footer()
+        {
+            List<MenuItem> menuItems = codeDb.Dropdowns.ToList().OrderByDescending(x=>x.Id).ToList();
+            List<Menu> menus = codeDb.Menus.ToList();
+
+            return PartialView(menus);
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)

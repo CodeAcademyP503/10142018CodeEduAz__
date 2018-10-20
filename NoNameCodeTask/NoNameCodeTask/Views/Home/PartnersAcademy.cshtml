@@ -1,0 +1,23 @@
+﻿@model IEnumerable<NoNameCodeTask.Models.PartnersAcademy>
+
+@{
+    Layout = null;
+}
+
+<section id="partners">
+    <div class="wrapper">
+        <div class="heading">
+            <h1>
+                AKADEMİK PARTNYORLARIMIZ
+            </h1>
+        </div>
+        <div class="partners-list flexbox between middle flex-wrap">
+            @foreach (var item in Model)
+            {
+                <a class="partner flexbox middle center " href="academy/akademik-partnyorlar.html">
+                    <img src="@item.LogoPath" alt="">
+                </a>
+            }
+        </div>
+    </div>
+</section>

@@ -1,0 +1,98 @@
+﻿@model IEnumerable<NoNameCodeTask.Models.CommentSlider>
+
+@{
+    Layout = null;
+}
+
+<section id="graduates">
+    <div class="container-fluid">
+
+        <div class="row student-holder">
+            <div class="wrapper">
+                <div class="graduate-panel">
+                    <div class="graduate-list">
+                        @for (int i = 0; i < Model.Count(); i++)
+                        {
+                            int k = Model.Count() / 2;
+                            if (i >k)
+                            {
+                                break;
+                            }
+                            <div class="student">
+                                <div class="flexbox flex-wrap-reverse">
+                                    <div class="img">
+                                        <img src="@Model.ToList()[i].ImagePath"
+                                             alt="Telman Axundov" />
+                                        <span class="lines"></span>
+                                    </div>
+                                    <div class="heading flexbox flex-col">
+                                        <div class="up">
+                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                            <h2 class="type">Sektorda biz</h2>
+                                        </div>
+                                        <div class="details flexbox center flex-col">
+                                            <h2>@Model.ToList()[i].Name</h2>
+                                            <p>@Model.ToList()[i].ImagePath</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <p><p>@Model.ToList()[i].Text</p>
+                                    </p>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+            <div class="icon-panel"><img src="~/Content/Images/icons/linear.png" alt=""></div>
+        </div>
+
+
+        <div class="row student-holder down">
+            <div class="wrapper flexbox end">
+                <div class="graduate-panel">
+                    <div class="graduate-list">
+
+                        @for (int i = 0; i < Model.Count(); i++)
+                        {
+                            int k = Model.Count() / 2;
+                            if (i > k)
+                            {
+                                <div class="student">
+                                    <div class="flexbox flex-wrap-reverse">
+                                        <div class="img">
+                                            <img src="@Model.ToList()[i].ImagePath"
+                                                 alt="Şeyda Allahverdiyeva" />
+                                            <span class="lines"></span>
+                                        </div>
+                                        <div class="heading flexbox flex-col">
+                                            <div class="up">
+                                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                <h2 class="type">Məzunlar</h2>
+                                            </div>
+                                            <div class="details flexbox center flex-col">
+                                                <h2>@Model.ToList()[i].Name</h2>
+                                                <p>@Model.ToList()[i].JobPosition</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <p><p>@Model.ToList()[i].Text</p>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="icon-panel"><img src="~/Content/Images/icons/linear_left.png" alt=""></div>
+        </div>
+
+
+
+    </div>
+</section>

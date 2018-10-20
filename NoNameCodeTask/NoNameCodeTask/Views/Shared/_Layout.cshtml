@@ -44,180 +44,114 @@
 </head>
 
 <body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript>
-		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBW76DW"
-				height="0" width="0" style="display:none;visibility:hidden"></iframe>
-	</noscript>
-	<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBW76DW"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-	<header>
-		<div class="top"></div>
-		<div class="info">
-			<div class="wrapper">
-				<h4>
-					Nizami küçəsi 203B, AF Business House, 2-ci mərtəbə | Şəhər telefonlarından: +994125552525 | Mobil/Whatsapp: +994504442633
-				</h4>
-			</div>
-		</div>
-		@Html.Action("GetData","Navbar")
-	</header>
-	@RenderBody()
-
-
-	<section id="contact">
-		<div class="wrapper">
-			<div class="flexbox middle center">
-				<div class="background">
-					<img src="~/Content/Images/student.png" alt="">
-					<div class="overlay"></div>
-				</div>
-				<div class="details flexbox center flex-col middle">
-					<div class="heading">
-						<h2><span>SUALINIZ VAR?</span> GƏLİN, GÖRÜŞƏK</h2>
-					</div>
-					<div class="contact-form form">
-
-						<form action="https://code.edu.az/form/letsmeet" class="flexbox between setCookie flex-wrap invalid validator" id="form-contact-me" method="post">
-							<input name="__RequestVerificationToken" type="hidden" value="-ZvpJdzwiGOo798oDMTQO1DKW1NFeTzXK6PFL-Bn0PmQnIyEGRPoS6B6Rv9zXLZvqKu2n1l2VzUUywFcewZ0LZKKHgHgTjXnL0HYqj8G0nE1" />                                <input type="hidden" name="gaid" />
-							<div class="input-wrapper">
-								<input id="bottom-name" type="text" placeholder="Adınız" name="name" data-name="Adınız" class="validate input-control input-style">
-								<span class="underline"></span>
-							</div>
-							<div class="input-wrapper">
-								<input id="bottom-surname" type="text" placeholder="Soyadınız" name="surname" data-surname="Soyadınız" class="validate input-control input-style">
-								<span class="underline"></span>
-							</div>
-							<div class="input-wrapper phone-input flexbox">
-								<input type="hidden" name="number" data-prefix="(050)-" data-value="" value="" />
-								<div class="phone-input-holder flexbox">
-									<div class="phone-prefix">
-										<select>
-											<option value="050">050</option>
-											<option value="051">051</option>
-											<option value="055">055</option>
-											<option value="070">070</option>
-											<option value="077">077</option>
-											<option value="012">012</option>
-										</select>
-									</div>
-									<div class="phone-value">
-										<input data-has-focus="false" id="bottom-number" type="text" placeholder="XXX-XX-XX" data-mask="number" data-validate-name="number" data-name="Mobil nömrəniz" class="validate input-control input-style">
-										<span class="underline"></span>
-									</div>
-								</div>
-							</div>
-							<div class="input-wrapper flexbox bottom">
-								<input id="bottom-send" value="GÖNDƏR" type="submit" class="button-style button-blue input-control">
-							</div>
-							<div class="message-status">
-								<p class="message">
-									<span></span>
-									<i class="fa fa-check-circle"></i>
-								</p>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<footer>
-		<div class="wrapper">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-9">
-						<ul class="links flexbox between">
-							<li>
-								<h3>AKADEMİYA</h3>
-								<ul>
-									<li><a href="academy/haqqimizda.html">Haqqımızda</a></li>
-									<li><a href="academy/idare-heyeti.html">İdarə Heyəti</a></li>
-									<li><a href="academy/muellimlerimiz.html">M&#252;əllimlərimiz</a></li>
-									<li><a href="academy/akademik-partnyorlar.html">Akademik Partnyorlar</a></li>
-								</ul>
-							</li>
-							<li>
-								<h3>DƏRSLƏR</h3>
-								<ul>
-									<li><a href="education/qrafik-ve-veb-dizayn.html">Qrafik və Veb Dizayn</a></li>
-									<li><a href="education/digital-marketing.html">Digital Marketing</a></li>
-									<li><a href="education/proqramlasdirma.html">Proqramlaşdırma</a></li>
-									<li><a href="education/sistem-administratorlugu.html">Sistem  Administratorluğu</a></li>
-									<li><a href="education/ms-office.html">MS Office</a></li>
-									<li><a href="education/3d-modellesdirme-ve-vizualizasiya.html">3D Modelləşdirmə və Vizualizasiya</a></li>
-								</ul>
-							</li>
-							<li>
-								<h3>TƏHSİL MODELİ</h3>
-								<ul>
-									<li><a href="education/zemanetli_tehsil.html">Zəmanətli təhsil</a></li>
-									<li><a href="education/tehsil-modeli.html">Təhsil Modeli</a></li>
-									<li><a href="education/mentor_sistemi.html">Mentor sistemi</a></li>
-									<li><a href="education/beynalxalq_sertifkasiya.html">Beynəlxalq sertifikasiya</a></li>
-									<li><a href="education/karyera-merkezi.html">Karyera mərkəzi</a></li>
-								</ul>
-							</li>
-							<li>
-								<h3>TƏQVİM</h3>
-								<ul>
-									<li><a href="events/infosessiyalar.html">İnfosessiyalar</a></li>
-									<li><a href="events/gizlilik_siyaseti.html">Gizlilik Siyasəti</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<div class="contact-details align-right">
-							<h3>ƏLAQƏ</h3>
-							<address>Nizami küçesi 203B, AF Business House, 2-ci mərtəbə</address><a href="tel:+994125552525" class="phone">Tel: +99412 555 2525</a>
-							<p>
-								Mobil: <a href="tel:+994504442633">+99450 444 2633</a>
-								<br>Whatsapp: <a href="tel:+994504442633">+99450 444 2633</a>
-							</p>
-							<ul class="social-networks flexbox between">
-								<li><a target="_blank" href="https://www.facebook.com/code.edu.az"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
-								<li><a target="_blank" href="https://twitter.com/Code_edu_az"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								<li><a target="_blank" href="https://www.instagram.com/code.edu.az/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-								<li><a target="_blank" href="https://www.linkedin.com/company/code.edu.az"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+    <header>
+        <div class="top"></div>
+        <div class="info">
+            <div class="wrapper">
+                <h4>
+                    Nizami küçəsi 203B, AF Business House, 2-ci mərtəbə | Şəhər telefonlarından: +994125552525 | Mobil/Whatsapp: +994504442633
+                </h4>
+            </div>
+        </div>
+        @Html.Action("GetData", "Navbar")
+    </header>
+    @RenderBody()
 
 
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+    <section id="contact">
+        <div class="wrapper">
+            <div class="flexbox middle center">
+                <div class="background">
+                    <img src="~/Content/Images/student.png" alt="">
+                    <div class="overlay"></div>
+                </div>
+                <div class="details flexbox center flex-col middle">
+                    <div class="heading">
+                        <h2><span>SUALINIZ VAR?</span> GƏLİN, GÖRÜŞƏK</h2>
+                    </div>
+                    <div class="contact-form form">
 
-	<script src="~/Content/scripts/vendor/modernizr.js"></script>
+                        <form action="https://code.edu.az/form/letsmeet" class="flexbox between setCookie flex-wrap invalid validator" id="form-contact-me" method="post">
+                            <input name="__RequestVerificationToken" type="hidden" value="-ZvpJdzwiGOo798oDMTQO1DKW1NFeTzXK6PFL-Bn0PmQnIyEGRPoS6B6Rv9zXLZvqKu2n1l2VzUUywFcewZ0LZKKHgHgTjXnL0HYqj8G0nE1" />                                <input type="hidden" name="gaid" />
+                            <div class="input-wrapper">
+                                <input id="bottom-name" type="text" placeholder="Adınız" name="name" data-name="Adınız" class="validate input-control input-style">
+                                <span class="underline"></span>
+                            </div>
+                            <div class="input-wrapper">
+                                <input id="bottom-surname" type="text" placeholder="Soyadınız" name="surname" data-surname="Soyadınız" class="validate input-control input-style">
+                                <span class="underline"></span>
+                            </div>
+                            <div class="input-wrapper phone-input flexbox">
+                                <input type="hidden" name="number" data-prefix="(050)-" data-value="" value="" />
+                                <div class="phone-input-holder flexbox">
+                                    <div class="phone-prefix">
+                                        <select>
+                                            <option value="050">050</option>
+                                            <option value="051">051</option>
+                                            <option value="055">055</option>
+                                            <option value="070">070</option>
+                                            <option value="077">077</option>
+                                            <option value="012">012</option>
+                                        </select>
+                                    </div>
+                                    <div class="phone-value">
+                                        <input data-has-focus="false" id="bottom-number" type="text" placeholder="XXX-XX-XX" data-mask="number" data-validate-name="number" data-name="Mobil nömrəniz" class="validate input-control input-style">
+                                        <span class="underline"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-wrapper flexbox bottom">
+                                <input id="bottom-send" value="GÖNDƏR" type="submit" class="button-style button-blue input-control">
+                            </div>
+                            <div class="message-status">
+                                <p class="message">
+                                    <span></span>
+                                    <i class="fa fa-check-circle"></i>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<script src="~/Content/scripts/vendor.js"></script>
+    @Html.Action("Footer", "Home");
 
-	<script src="~/Content/scripts/vendor/cleave.min.js"></script>
+    <script src="~/Content/scripts/vendor/modernizr.js"></script>
 
-	<script src="~/Content/scripts/vendor/js.cookie.min.js"></script>
+    <script src="~/Content/scripts/vendor.js"></script>
+
+    <script src="~/Content/scripts/vendor/cleave.min.js"></script>
+
+    <script src="~/Content/scripts/vendor/js.cookie.min.js"></script>
 
 
 
-	<script src="~/Content/scripts/main.js"></script>
+    <script src="~/Content/scripts/main.js"></script>
 
 
-	<script>
-		$(document).ready(function () {
-			$('#bottom-send').click(function (e) {
-				$('#bottom-send').closest('.input-wrapper').addClass("loading");
-			});
+    <script>
+        $(document).ready(function () {
+            $('#bottom-send').click(function (e) {
+                $('#bottom-send').closest('.input-wrapper').addClass("loading");
+            });
 
 
-			setTimeout(function () {
-				if ($("input[name='gaid']").length > 0) {
-					$("input[name='gaid']").val(ga.getAll()[0].get('clientId'))
-				}
-			}, 10000);
-		});
-	</script>
+            setTimeout(function () {
+                if ($("input[name='gaid']").length > 0) {
+                    $("input[name='gaid']").val(ga.getAll()[0].get('clientId'))
+                }
+            }, 10000);
+        });
+    </script>
 
 
 

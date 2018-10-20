@@ -65,6 +65,7 @@ namespace NoNameCodeTask.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+
             NewsContent newsContent = db.NewsContents.Find(id);
             if (newsContent == null)
             {

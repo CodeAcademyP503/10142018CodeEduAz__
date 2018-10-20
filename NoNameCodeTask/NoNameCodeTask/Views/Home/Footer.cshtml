@@ -1,0 +1,52 @@
+﻿@model IEnumerable<NoNameCodeTask.Models.Menu>
+
+@{
+    Layout = null;
+}
+
+
+<footer>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9">
+                    <ul class="links flexbox between">
+                        @foreach (var item in Model)
+                        {
+                            if (item.Id == 1 ||  item.Id == 6 || item.Id == 7 || item.Id == 9)
+                            {
+                                <li>
+                                    <h3>@item.Name</h3>
+                                    <ul>
+                                        @foreach (var i in item.NavbarDropdowns)
+                                        {
+                                            <li><a href="#">@i.Name</a></li>
+                                        }
+                                    </ul>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="contact-details align-right">
+                        <h3>ƏLAQƏ</h3>
+                        <address>Nizami küçesi 203B, AF Business House, 2-ci mərtəbə</address><a href="tel:+994125552525" class="phone">Tel: +99412 555 2525</a>
+                        <p>
+                            Mobil: <a href="tel:+994504442633">+99450 444 2633</a>
+                            <br>Whatsapp: <a href="tel:+994504442633">+99450 444 2633</a>
+                        </p>
+                        <ul class="social-networks flexbox between">
+                            <li><a target="_blank" href="https://www.facebook.com/code.edu.az"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/Code_edu_az"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/code.edu.az/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/company/code.edu.az"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
