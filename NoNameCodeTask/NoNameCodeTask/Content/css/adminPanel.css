@@ -1,4 +1,9 @@
-.menuCrud a{
+.menuContainer{
+    width: 100%;
+    background-color: white;
+}
+
+.menuCrud a {
     background-color: green;
     padding: 6px 27px;
     font-size: 16px;
@@ -13,11 +18,11 @@
     display: inline-block;
     background-color: white;
 }
-.container .menuItem{
+.container .menuItem {
     border-bottom: 1px solid brown;
+    padding: 11px 0;
 }
 .menuItem >div{
-    line-height: 2.8
 }
 .menuItem >div p{
     background-color: white;
