@@ -1,0 +1,20 @@
+﻿@model IEnumerable<NoNameCodeTask.Models.SubjectPrograms>
+
+@{
+    Layout = null;
+}
+
+<section id="services"
+         class="">
+    <div class="heading">
+        <h1>TƏDRİS PROQRAMLARIMIZ</h1>
+    </div>
+    <div class="wrapper">
+        <div class="classes flexbox between flex-wrap">
+            @foreach (var item in Model)
+            {
+                <a class="class flexbox middle digital_marketing" style="background-color:@item.ClickPath; background-image: url(@item.IconPath) " href="#">@item.Name</a>
+            }
+        </div>
+    </div>
+</section>

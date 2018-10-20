@@ -43,8 +43,13 @@ namespace WebApplicationtest.Controllers
             return PartialView(newsContents);
         }
         //=======================Wrapper End============================================= 
-       
 
+        public ActionResult AcademySubjects()
+        {
+            List<SubjectPrograms> subjectPrograms = codeDb.SubjectPrograms.ToList();
+
+            return View(subjectPrograms);
+        }
         //=======================commentSlide Start============================================= 
         public ActionResult CommentSliders()
         {

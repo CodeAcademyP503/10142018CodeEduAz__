@@ -564,6 +564,7 @@
     <Content Include="Views\Home\PartnersAcademy.cshtml" />
     <Content Include="Views\Home\Footer.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\AcademySubjects.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
